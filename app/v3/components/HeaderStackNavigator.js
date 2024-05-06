@@ -62,9 +62,9 @@ const Stack = createStackNavigator();
 export function HeaderStackNavigator(props){
 
     return(
-        <Stack.Navigator
-        headerMode="screen"        
+        <Stack.Navigator  
          screenOptions={({navigation,route}) => ({
+            headerMode: "screen",
             headerTitle: 'Central Técnica Onbus',
             headerStyle: styles.headerStyle,
             headerTitleAlign:'center',

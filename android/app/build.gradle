@@ -117,3 +117,15 @@ dependencies {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+
+/**
+ * O código abaixo configura os arquivos de fonto e o uso desses aquivos para a exibição dos ícones.
+ */
+project.ext.vectoricons = [
+    iconFontNames: [ 'MaterialIcons.ttf', 'EvilIcons.ttf' ] // Specify font files
+]
+
+apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+/**
+ * Fim da configuração para os ícones.
+ */

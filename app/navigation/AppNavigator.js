@@ -49,9 +49,9 @@ import UpgradeScreen from '../screen/App/UpgradeScreen';
 
 const Stack         = createStackNavigator();
 const AppNavigator  = (props) => (
-    <Stack.Navigator       
-        headerMode="screen"
+    <Stack.Navigator
         screenOptions={{
+            headerMode: "screen",
             header: ({ scene, previous, navigation }) => (
                 <HeaderApp scene={scene} previous={previous} navigation={navigation} />
             ),
