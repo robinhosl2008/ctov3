@@ -1,0 +1,12 @@
+{
+  // "extends": "@react-native/typescript-config/tsconfig.json"
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "allowArbitraryExtensions": true,
+    "declaration": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "skipLibCheck": true
+  }
+}

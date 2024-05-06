@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "114005640193",
+    "project_id": "qa-onbusmobile",
+    "storage_bucket": "qa-onbusmobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114005640193:android:4927152478dc17d8c86c00",
+        "android_client_info": {
+          "package_name": "com.ctov3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114005640193-mci3ui307sth4sngbad3j8kd1f58v415.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoikNL_8zD31t8Jpgs-h_5lo9YvTfmps0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114005640193-mci3ui307sth4sngbad3j8kd1f58v415.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

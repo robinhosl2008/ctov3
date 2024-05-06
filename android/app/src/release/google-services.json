@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "691507029049",
+    "firebase_url": "https://onbus-mobile.firebaseio.com",
+    "project_id": "onbus-mobile",
+    "storage_bucket": "onbus-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691507029049:android:7fd765105fc084f5",
+        "android_client_info": {
+          "package_name": "com.ctov3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691507029049-mmn82if8ujf58uehe7snimp3a6itfge3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9eHfkv7BmgBk-Xh5pczEKLA_U3sLCLLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691507029049-mmn82if8ujf58uehe7snimp3a6itfge3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
