@@ -123,7 +123,7 @@ function LoginScreen_v3(props){
                     editable={true}
                     // backgroundColor={(loading) ? 'whitesmoke' : 'white'}
                     value={senha} 
-                    onChangeText={txtSenha => this.setSenha(txtSenha)} 
+                    onChangeText={txtSenha => setSenha(txtSenha)} 
                     secureTextEntry={true}
                     style={styles.forminput} 
                 />
