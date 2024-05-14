@@ -2,9 +2,9 @@ import React from 'react';
 import { Text, View } from 'react-native'; 
 import Screen from './../../component/Screen';
 import PatrimonioSaidaListaStatus from './../../component/PatrimonioSaida/PatrimonioSaidaListaStatus';
-import CardTitle from '../../component/CardTitle';
+// import CardTitle from '../../component/CardTitle';
 import { ScrollView } from 'react-native-gesture-handler';
-import PatrimonioSaidaHeader from './../../component/PatrimonioSaida/PatrimonioSaidaHeader';
+// import PatrimonioSaidaHeader from './../../component/PatrimonioSaida/PatrimonioSaidaHeader';
 
 function PatrimonioSaidaScreen(props) {
     return (

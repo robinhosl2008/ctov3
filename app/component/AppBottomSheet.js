@@ -16,12 +16,12 @@ function AppBottomSheet(props) {
 
     return (
         <>  
-            <Animated.View pointerEvents="box-none"
+            {/* <Animated.View pointerEvents="box-none"
                 style={[
                 StyleSheet.absoluteFillObject,
                 { backgroundColor: 'black', opacity },
                 ]}
-            />
+            /> */}
             <BottomSheet
                 initialSnapIndex={1}
                 snapPoints={arr_snap_points}

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollView,View,Text,Button,StyleSheet, Image, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { View,Text,Button,StyleSheet, Image, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import {TextInput, Snackbar} from 'react-native-paper';
 import AnimateLoadingButton from 'react-native-animate-loading-button';
-import HideWithKeyboard from 'react-native-hide-with-keyboard';
+// import HideWithKeyboard from 'react-native-hide-with-keyboard';
 import AsyncStorageService from '../../service/AsyncStorageService';
 import AppService from '../../service/AppService';
 import { useNavigation } from '@react-navigation/native';
-import Feather from 'react-native-vector-icons/Feather';
+// import Feather from 'react-native-vector-icons/Feather';
 import packageJson from '../../../package.json';
 import { connect } from 'react-redux';
 
@@ -26,7 +26,7 @@ function LoginScreen_v3(props){
 
     const [usuario, setUsuario]             = useState(null);
     const [senha, setSenha]                 = useState(null);
-    let loadingButton                       = React.createRef();
+    var loadingButton                       = React.createRef();
 
     // Handle Error
     const [loading, setLoading]             = useState(false);
@@ -123,8 +123,7 @@ function LoginScreen_v3(props){
                     editable={true}
                     // backgroundColor={(loading) ? 'whitesmoke' : 'white'}
                     value={senha} 
-                    onChangeText={txtSenha => 
-                    setSenha(txtSenha)} 
+                    onChangeText={txtSenha => this.setSenha(txtSenha)} 
                     secureTextEntry={true}
                     style={styles.forminput} 
                 />

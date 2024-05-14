@@ -3,7 +3,7 @@ import { View,Text,StyleSheet,Pressable} from 'react-native';
 import { createStackNavigator } from "@react-navigation/stack";
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import TabBottomNavigator from "./TabBottomNavigator";
+// import TabBottomNavigator from "./TabBottomNavigator";
 import Notificacoes from "../screen/Notificacoes";
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import { connect } from "react-redux";
@@ -14,48 +14,48 @@ import LoginScreen_v3 from "../screen/LoginScreen_v3";
 import UpgradeScreen from "../../screen/App/UpgradeScreen";
 import { Template } from "../screen/Template";
 import PatrimonioEntradaScreen from "../../screen/Patrimonio/PatrimonioEntradaScreen";
-import PatrimonioSaidaScreen from "../../screen/Patrimonio/PatrimonioSaidaScreen";
-import PatrimonioSaidaListaItensScreen from "../../screen/Patrimonio/PatrimonioSaidaListaItensScreen";
-import PatrimonioSaidaSelecionarStatusDestinoScreen from "../../screen/Patrimonio/PatrimonioSaidaSelecionarStatusDestinoScreen";
-import PatrimonioSaidaListaDestinatarioScreen from "../../screen/Patrimonio/PatrimonioSaidaListaDestinatarioScreen";
-import PatrimonioSaidaListaColetadorScreen from "../../screen/Patrimonio/PatrimonioSaidaListaColetadorScreen";
-import PatrimonioConfirmarSaidaScreen from "../../screen/Patrimonio/PatrimonioConfirmarSaidaScreen";
-import OperacaoGaragemListaOnibusScreen from "../../screen/OperacaoGaragem/OperacaoGaragemListaOnibusScreen";
-import OperacaoGaragemAlertaAtuacaoScreen from "../../screen/OperacaoGaragem/OperacaoGaragemAlertaAtuacaoScreen";
-import OperacaoGaragemAssociarPatrimonioScreen from "../../screen/OperacaoGaragem/OperacaoGaragemAssociarPatrimonioScreen";
-import ConfirmarAssociarPatrimonioScreen from "../../screen/App/ConfirmarAssociarPatrimonioScreen";
-import LoadingSuccessScreen from "../../screen/App/LoadingSuccessScreen";
-import OperacaoGaragemAdicionarAtuacaoScreen from "../../screen/OperacaoGaragem/OperacaoGaragemAdicionarAtuacaoScreen";
-import OperacaoGaragemRetirarPatrimonioScreen from "../../screen/OperacaoGaragem/OperacaoGaragemRetirarPatrimonioScreen";
-import OperacaoGaragemSubstituirPatrimonioScreen from "../../screen/OperacaoGaragem/OperacaoGaragemSubstituirPatrimonioScreen";
-import OperacaoGaragemMotivoRetiradaScreen from '../../screen/OperacaoGaragem/OperacaoGaragemMotivoRetiradaScreen';
-import OperacaoGaragemSemAtuacaoScreen from '../../screen/OperacaoGaragem/OperacaoGaragemSemAtuacaoScreen';
-import OperacaoGaragemCheckListScreen from '../../screen/OperacaoGaragem/OperacaoGaragemCheckListScreen';
-import OperacaoGaragemConfirmarDesassociarPatrimonioScreen from '../../screen/OperacaoGaragem/OperacaoGaragemConfirmarDesassociarPatrimonioScreen';
-import OperacaoOOHListaAlertasScreen from '../../screen/OperacaoOOH/OperacaoOOHListaAlertasScreen';
-import {OperacaoOOHListaAVScreen } from '../../screen/OperacaoOOH/OperacaoOOHListaAVScreen';
-import { OperacaoOOHListaEstabelecimentoScreen } from '../../screen/OperacaoOOH/OperacaoOOHListaEstabelecimentosScreen';
-import { OperacaoOOHListaPontosScreen } from "../../screen/OperacaoOOH/OperacaoOOHListaPontosScreen";
-import { OperacaoOOHAlertaAtuacaoScreen } from  "../../screen/OperacaoOOH/OperacaoOOHAlertaAtuacaoScreen";
-import CheckingListarAVScreen      from '../../screen/Checking/CheckingListarAVScreen';
-import CheckingListaRotaScreen      from '../../screen/Checking/CheckingListaRotaScreen';
-import CheckingListaGaragemScreen   from '../../screen/Checking/CheckingListaGaragemScreen';
-import CheckingListaOnibusScreen   from '../../screen/Checking/CheckingListaOnibusScreen';
-import OperacaoGaragemOnibusScreen from '../../screen/v2_OperacaoGaragem/OperacaoGaragemOnibusScreen';
-import OperacaoGaragemListarAtuacaoScreen from '../../screen/v2_OperacaoGaragem/OperacaoGaragemListarAtuacaoScreen';
-import ConfirmarChecklistScreen from '../../screen/OperacaoGaragem/ConfirmarChecklistScreen';
-import ConfirmarCarroNaoEncontradoScreen from '../../screen/OperacaoGaragem/ConfirmarCarroNaoEncontradoScreen';
-import HistoricoAtuacaoScreen from '../../screen/HistoricoAtuacao/HistoricoAtuacaoScreen';
-import AlertaNaoConcluidoScreen from '../../screen/AlertaNaoConcluido/AlertaNaoConcluidoScreen';
-import ConsultarPatrimonioScreen from '../../screen/ConsultarPatrimonio/ConsultarPatrimonioScreen';
-import ConsultarPatrimonioItens from '../../screen/ConsultarPatrimonio/ConsultarPatrimonioItens';
-import ColetaInfoScreen from '../../screen/Coleta/ColetaInfoScreen';
-import ColetaExibirScreen from '../../screen/Coleta/ColetaExibirScreen';
-import VideoProcessingScreen from "../../screen/App/VideoProcessingScreen";
+// import PatrimonioSaidaScreen from "../../screen/Patrimonio/PatrimonioSaidaScreen";
+// import PatrimonioSaidaListaItensScreen from "../../screen/Patrimonio/PatrimonioSaidaListaItensScreen";
+// import PatrimonioSaidaSelecionarStatusDestinoScreen from "../../screen/Patrimonio/PatrimonioSaidaSelecionarStatusDestinoScreen";
+// import PatrimonioSaidaListaDestinatarioScreen from "../../screen/Patrimonio/PatrimonioSaidaListaDestinatarioScreen";
+// import PatrimonioSaidaListaColetadorScreen from "../../screen/Patrimonio/PatrimonioSaidaListaColetadorScreen";
+// import PatrimonioConfirmarSaidaScreen from "../../screen/Patrimonio/PatrimonioConfirmarSaidaScreen";
+// import OperacaoGaragemListaOnibusScreen from "../../screen/OperacaoGaragem/OperacaoGaragemListaOnibusScreen";
+// import OperacaoGaragemAlertaAtuacaoScreen from "../../screen/OperacaoGaragem/OperacaoGaragemAlertaAtuacaoScreen";
+// import OperacaoGaragemAssociarPatrimonioScreen from "../../screen/OperacaoGaragem/OperacaoGaragemAssociarPatrimonioScreen";
+// import ConfirmarAssociarPatrimonioScreen from "../../screen/App/ConfirmarAssociarPatrimonioScreen";
+// import LoadingSuccessScreen from "../../screen/App/LoadingSuccessScreen";
+// import OperacaoGaragemAdicionarAtuacaoScreen from "../../screen/OperacaoGaragem/OperacaoGaragemAdicionarAtuacaoScreen";
+// import OperacaoGaragemRetirarPatrimonioScreen from "../../screen/OperacaoGaragem/OperacaoGaragemRetirarPatrimonioScreen";
+// import OperacaoGaragemSubstituirPatrimonioScreen from "../../screen/OperacaoGaragem/OperacaoGaragemSubstituirPatrimonioScreen";
+// import OperacaoGaragemMotivoRetiradaScreen from '../../screen/OperacaoGaragem/OperacaoGaragemMotivoRetiradaScreen';
+// import OperacaoGaragemSemAtuacaoScreen from '../../screen/OperacaoGaragem/OperacaoGaragemSemAtuacaoScreen';
+// import OperacaoGaragemCheckListScreen from '../../screen/OperacaoGaragem/OperacaoGaragemCheckListScreen';
+// import OperacaoGaragemConfirmarDesassociarPatrimonioScreen from '../../screen/OperacaoGaragem/OperacaoGaragemConfirmarDesassociarPatrimonioScreen';
+// import OperacaoOOHListaAlertasScreen from '../../screen/OperacaoOOH/OperacaoOOHListaAlertasScreen';
+// import {OperacaoOOHListaAVScreen } from '../../screen/OperacaoOOH/OperacaoOOHListaAVScreen';
+// import { OperacaoOOHListaEstabelecimentoScreen } from '../../screen/OperacaoOOH/OperacaoOOHListaEstabelecimentosScreen';
+// import { OperacaoOOHListaPontosScreen } from "../../screen/OperacaoOOH/OperacaoOOHListaPontosScreen";
+// import { OperacaoOOHAlertaAtuacaoScreen } from  "../../screen/OperacaoOOH/OperacaoOOHAlertaAtuacaoScreen";
+// import CheckingListarAVScreen      from '../../screen/Checking/CheckingListarAVScreen';
+// import CheckingListaRotaScreen      from '../../screen/Checking/CheckingListaRotaScreen';
+// import CheckingListaGaragemScreen   from '../../screen/Checking/CheckingListaGaragemScreen';
+// import CheckingListaOnibusScreen   from '../../screen/Checking/CheckingListaOnibusScreen';
+// import OperacaoGaragemOnibusScreen from '../../screen/v2_OperacaoGaragem/OperacaoGaragemOnibusScreen';
+// import OperacaoGaragemListarAtuacaoScreen from '../../screen/v2_OperacaoGaragem/OperacaoGaragemListarAtuacaoScreen';
+// import ConfirmarChecklistScreen from '../../screen/OperacaoGaragem/ConfirmarChecklistScreen';
+// import ConfirmarCarroNaoEncontradoScreen from '../../screen/OperacaoGaragem/ConfirmarCarroNaoEncontradoScreen';
+// import HistoricoAtuacaoScreen from '../../screen/HistoricoAtuacao/HistoricoAtuacaoScreen';
+// import AlertaNaoConcluidoScreen from '../../screen/AlertaNaoConcluido/AlertaNaoConcluidoScreen';
+// import ConsultarPatrimonioScreen from '../../screen/ConsultarPatrimonio/ConsultarPatrimonioScreen';
+// import ConsultarPatrimonioItens from '../../screen/ConsultarPatrimonio/ConsultarPatrimonioItens';
+// import ColetaInfoScreen from '../../screen/Coleta/ColetaInfoScreen';
+// import ColetaExibirScreen from '../../screen/Coleta/ColetaExibirScreen';
+// import VideoProcessingScreen from "../../screen/App/VideoProcessingScreen";
 import AppService from "../../service/AppService";
-import HeaderApp from "../../component/HeaderApp";
-import SelecionarAtuacaoScreen from "../screen/SelecionarAtuacaoScreen";
-import SelecionarOnibusScreen from "../screen/SelecionarOnibusScreen";
+// import HeaderApp from "../../component/HeaderApp";
+// import SelecionarAtuacaoScreen from "../screen/SelecionarAtuacaoScreen";
+// import SelecionarOnibusScreen from "../screen/SelecionarOnibusScreen";
 
 const Stack = createStackNavigator();
 
@@ -80,25 +80,24 @@ export function HeaderStackNavigator(props){
             })}
             
          > 
-          {
+        {
             (props.user.id === undefined)
-             ? ( 
+                ? ( 
                     <>
                         <Stack.Screen name="LoginScreen_v3" options={{title: "Login", headerShown: false}} component={LoginScreen_v3} />
                         <Stack.Screen name="UpgradeScreen" options={{title: "Upgrade", headerShown: false}} component={UpgradeScreen} />
                     </>
-                )
-            :  (
+                ) : (
                     <>
-                        <Stack.Screen name="TabBottomNavigator" component={TabBottomNavigator}/>
+                         {/* <Stack.Screen name="TabBottomNavigator" component={TabBottomNavigator}/> */}
                         <Stack.Screen name="Notificacoes" options={{title:'Notificações'}} component={Notificacoes}/>
                         <Stack.Screen name="Histórico" options={{title:'Histórico'}} component={HistoricoColeta}/>
                         <Stack.Screen name="Template"  component={Template} />
                         <Stack.Screen name="HistoricoColeta"  component={HistoricoColeta} />
                         <Stack.Screen name="PatrimonioEntradaScreen" options={{title: store.getState().app.user_auth.label_entrada_patrimonio}} component={PatrimonioEntradaScreen} />
-                        <Stack.Screen name="PatrimonioSaidaScreen" options={{title: store.getState().app.user_auth.label_saida_patrimonio}} component={PatrimonioSaidaScreen} />
-                        <Stack.Screen name="PatrimonioSaidaListaItensScreen" options={{title: store.getState().app.user_auth.label_saida_patrimonio}} component={PatrimonioSaidaListaItensScreen} />
-                        <Stack.Screen name="PatrimonioSaidaSelecionarStatusDestinoScreen" options={{title: store.getState().app.user_auth.label_saida_patrimonio}} component={PatrimonioSaidaSelecionarStatusDestinoScreen} />
+                        {/* <Stack.Screen name="PatrimonioSaidaScreen" options={{title: store.getState().app.user_auth.label_saida_patrimonio}} component={PatrimonioSaidaScreen} /> */}
+                        {/* <Stack.Screen name="PatrimonioSaidaListaItensScreen" options={{title: store.getState().app.user_auth.label_saida_patrimonio}} component={PatrimonioSaidaListaItensScreen} /> */}
+                        {/* <Stack.Screen name="PatrimonioSaidaSelecionarStatusDestinoScreen" options={{title: store.getState().app.user_auth.label_saida_patrimonio}} component={PatrimonioSaidaSelecionarStatusDestinoScreen} />
                         <Stack.Screen name="PatrimonioSaidaListaDestinatarioScreen" options={{title: store.getState().app.user_auth.label_saida_patrimonio}} component={PatrimonioSaidaListaDestinatarioScreen} />
                         <Stack.Screen name="PatrimonioSaidaListaColetadorScreen" options={{title: store.getState().app.user_auth.label_saida_patrimonio}} component={PatrimonioSaidaListaColetadorScreen} />
                         <Stack.Screen name="PatrimonioConfirmarSaidaScreen" options={{headerShown: false}} component={PatrimonioConfirmarSaidaScreen} />
@@ -135,10 +134,10 @@ export function HeaderStackNavigator(props){
                         <Stack.Screen name="ColetaExibirScreen" options={{title: 'Coleta de Patrimônios', headerShown: true}} component={ColetaExibirScreen} />
                         <Stack.Screen name="VideoProcessingScreen" options={{headerShown: false}} component={VideoProcessingScreen} />
                         <Stack.Screen name="SelecionarAtuacaoScreen" component={SelecionarAtuacaoScreen} />
-                        <Stack.Screen name="SelecionarOnibusScreen" component={SelecionarOnibusScreen} />
+                        <Stack.Screen name="SelecionarOnibusScreen" component={SelecionarOnibusScreen} /> */}
                     </>
                 )
-            }
+        }
         </Stack.Navigator>   
     )
 }
