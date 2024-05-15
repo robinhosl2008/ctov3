@@ -9,6 +9,7 @@ import { useNavigation } from '@react-navigation/native';
 // import Feather from 'react-native-vector-icons/Feather';
 import packageJson from '../../../package.json';
 import { connect } from 'react-redux';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 
 function LoginScreen_v3(props){
@@ -95,7 +96,7 @@ function LoginScreen_v3(props){
 
         } finally {
             // Desabilita o Loading do Botão
-            loadingButton.showLoading(0);
+            loadingButton.showLoading(false);
             setLoading(false);
         }
     }

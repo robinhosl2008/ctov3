@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native';
 import BottomSheet from '@gorhom/bottom-sheet';
-import Animated, { Extrapolate, interpolate, Value } from 'react-native-reanimated';
+import { Extrapolate, interpolate, Value } from 'react-native-reanimated';
 
 function AppBottomSheet(props) {
 

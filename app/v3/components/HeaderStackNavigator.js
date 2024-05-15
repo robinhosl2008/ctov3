@@ -89,7 +89,7 @@ export function HeaderStackNavigator(props){
                     </>
                 ) : (
                     <>
-                         <Stack.Screen name="TabBottomNavigator" component={TabBottomNavigator}/>
+                        <Stack.Screen name="TabBottomNavigator" options={{title:'TabBottomNavigator'}} component={TabBottomNavigator}/>
                         <Stack.Screen name="Notificacoes" options={{title:'Notificações'}} component={Notificacoes}/>
                         <Stack.Screen name="Histórico" options={{title:'Histórico'}} component={HistoricoColeta}/>
                         <Stack.Screen name="Template"  component={Template} />

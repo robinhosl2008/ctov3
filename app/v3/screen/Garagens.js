@@ -1,20 +1,20 @@
 import React,{ useEffect, useState } from 'react';
 import { View,Text,StyleSheet,TouchableOpacity,FlatList,TouchableWithoutFeedback,Keyboard } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { ScrollView } from 'react-native-gesture-handler';
-import OperacaoGaragemService from '../../service/OperacaoGaragemService';
-import OperacaoOOHService from '../../service/OperacaoOOHService';
+// import { ScrollView } from 'react-native-gesture-handler';
+// import OperacaoGaragemService from '../../service/OperacaoGaragemService';
+// import OperacaoOOHService from '../../service/OperacaoOOHService';
 import { TextInput } from 'react-native-paper';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+// import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+// import Ionicons from 'react-native-vector-icons/Ionicons';
+// import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Infotape from '../components/Infotape';
-import firestore from '@react-native-firebase/firestore';
+// import firestore from '@react-native-firebase/firestore';
 import Loader from '../components/Loader';
 import { connect } from 'react-redux';
-import EmpresaOnibusService from '../../service/EmpresaOnibusService';
-import util from '../../util/util';
+// import EmpresaOnibusService from '../../service/EmpresaOnibusService';
+// import util from '../../util/util';
 import EmpresaOnibusFuncionarioService from '../../service/EmpresaOnibusFuncionarioService';
 
 
@@ -58,7 +58,8 @@ const Garagens = (props) => {
             <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
             <View>
                 <View style={styles.garagensContainer}>
-                    <Ionicons name="bus" size={60} color="gray" />
+                    {/* <Ionicons name="bus" size={60} color="gray" /> */}
+                    <FontAwesome5 name={"bus"} solid size={60} color="gray" />
                     <Text style={styles.title}>Selecione a Garagem</Text>
                 </View>
                 <View style={styles.filtroContainer}>

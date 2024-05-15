@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { View,Text,TouchableOpacity, StyleSheet} from 'react-native';
-import { Badge } from 'react-native-paper';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+// import { Badge } from 'react-native-paper';
+// import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+// import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 export default function Infotape(props){
@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
     infotapeActionLabel:{
         fontFamily:'Arial',
         fontSize:16,
-        marginLeft:18
+        marginLeft:18,
+        color: 'black'
     },
     infotapeActionSubLabel:{
         display:'flex',

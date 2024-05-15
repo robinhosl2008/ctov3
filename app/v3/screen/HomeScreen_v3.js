@@ -12,7 +12,7 @@ import HeaderProfilePicture from '../components/HeaderProfilePicture';
 // import { Badge } from 'react-native-paper';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+// import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 // import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 // import { NavigationContainer, useNavigation } from '@react-navigation/native';
@@ -48,10 +48,10 @@ export function HomeScreen_v3({navigation,cto}) {
                         <View style={styles.actionsTitle}>
                             <Text style={styles.title}>Resumo das atuações</Text> 
                         </View>
-                    <Infotape icon={<FontAwesome5 name={"camera"} solid size={25} color="gray" />} touchEvent={true} label="Checking"  badge={cto.total_checking_a_fazer}/>
-                    <Infotape icon={<FontAwesome5 name={"search-location"} solid size={25} color="gray" />} touchEvent={true} label="Terminais" badge={cto.total_ooh_a_fazer} />
-                    <Infotape icon={<FontAwesome5 name={"bus"} solid size={25} color="gray" />} touchEvent={true} label="Garagens" badge={cto.total_garagem_a_fazer}/>
-                    <Infotape icon={<FontAwesome5 name={"box"} solid size={25} color="gray" />} touchEvent={true} label="Patrimonios" badge={total_enviar} />
+                        <Infotape icon={<FontAwesome5 name={"camera"} solid size={25} color="gray" />} touchEvent={true} label="Checking"  badge={cto.total_checking_a_fazer}/>
+                        <Infotape icon={<FontAwesome5 name={"search-location"} solid size={25} color="gray" />} touchEvent={true} label="Terminais" badge={cto.total_ooh_a_fazer} />
+                        <Infotape icon={<FontAwesome5 name={"bus"} solid size={25} color="gray" />} touchEvent={true} label="Garagens" badge={cto.total_garagem_a_fazer}/>
+                        <Infotape icon={<FontAwesome5 name={"box"} solid size={25} color="gray" />} touchEvent={true} label="Patrimonios" badge={total_enviar} />
                     </View>
                 </ScrollView>
             </PTRView>
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
         fontSize:18,
         fontFamily:'Arial',
         margin:10,
+        color:'#000000',
     },
    
 });

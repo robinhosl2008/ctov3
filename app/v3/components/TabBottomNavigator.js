@@ -17,11 +17,11 @@ const Tab = createBottomTabNavigator();
 function displayIcon(routeName,focused,tintColor,size){
     tintColor = focused ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,0.6)';
     switch(routeName){
-        case 'Checking' : return(<FontAwesome5 name="camera" size={25} color={tintColor}/>); break;
-        case 'Terminais' : return(<Ionicons name="location-sharp" size={25} color={tintColor}/>); break;
-        case 'HomeScreen_v3' : return(<FontAwesome5 name="home" size={25} color={tintColor}/>); break;
-        case 'Garagens' : return(<FontAwesome5 name="bus" size={25} color={tintColor}/>); break;
-        case 'Patrimonios' : return(<FontAwesome5 name="box" size={25} color={tintColor}/>); break;
+        case 'Checking' : return(<FontAwesome5 name={"camera"} solid size={25}/>); break;
+        case 'Terminais' : return(<FontAwesome5 name={"search-location"} solid size={25}/>); break;
+        case 'HomeScreen_v3' : return(<FontAwesome5 name={"home"} solid size={25}/>); break;
+        case 'Garagens' : return(<FontAwesome5 name={"bus"} solid size={25}/>); break;
+        case 'Patrimonios' : return(<FontAwesome5 name={"box"} solid size={25}/>); break;
     }
 }
 
@@ -32,10 +32,12 @@ export default function TabBottomNavigator(){
     return(
         <Tab.Navigator 
             initialRouteName="HomeScreen_v3"
-            tabBarOptions={{
-                showLabel:false,
-                style: styles.tabBarStyle
-            }} 
+            activeColor="#f0edf6"
+            inactiveColor="#3e2465"
+            screenOptions={() => ({
+                tabBarShowLabel: false,
+                tabBarStyle: {backgroundColor:"darkorange"},
+            })}
         >   
             <Tab.Screen name="Checking" options={{tabBarIcon:({focused,color,size}) => displayIcon('Checking',focused,color,size)}} component={Checking}/>
             <Tab.Screen name="Terminais"  options={{tabBarIcon:({focused,color,size}) => displayIcon('Terminais',focused,color,size)}} component={Terminais}/>
@@ -45,9 +47,3 @@ export default function TabBottomNavigator(){
         </Tab.Navigator>
     )
 }
-
-const styles = StyleSheet.create({
-    tabBarStyle:{
-        backgroundColor:'darkorange',
-    }
-});
