@@ -89,8 +89,8 @@ export default {
                 await LibService.watch_lib_equipamento_motivo_retirada();
 
                 console.info("::: AGUARDANDO FUNCIONÁRO FILTRO ATUAÇÃO...");
-                await OperacaoGaragemService.watch_funcionario_filtro_atuacao(); // VAMOS APAGAR ISSO DAQUI DEPOIS!!
-                await LibService.watch_funcionario_filtro_atuacao(); 
+                // await OperacaoGaragemService.watch_funcionario_filtro_atuacao(); // VAMOS APAGAR ISSO DAQUI DEPOIS!!
+                // await LibService.watch_funcionario_filtro_atuacao(); 
                 
                 console.info("::: AGUARDANDO USUÁRIOS...");
                 await UsersService.watch_firestore();

@@ -19,8 +19,8 @@ function AVCheckingHeader(props) {
             <LottieTakePicture />
             <Text style={style.title}>Checking Fotográfico</Text> 
             <View style={{width: '85%', alignItems: 'center'}}>
-                <Text style={{fontSize: 15, fontWeight: 'bold', textAlign: 'center', marginBottom: 5}}>{`AV ${props.av_checking.id} - ${props.av_checking.nome_campanha}`}</Text>
-                <Text style={{fontSize: 14, textAlign: 'center', marginTop:-8, marginBottom:14,}}>{`${props.av_checking.cliente}`}</Text>
+                <Text style={{fontSize: 15, fontWeight: 'bold', textAlign: 'center', marginBottom: 5, color: "#000000"}}>{`AV ${props.av_checking.id} - ${props.av_checking.nome_campanha}`}</Text>
+                <Text style={{fontSize: 14, textAlign: 'center', marginTop:-8, marginBottom:14, color: "#000000"}}>{`${props.av_checking.cliente}`}</Text>
             </View>
         </View>
     )
@@ -32,7 +32,8 @@ const style = StyleSheet.create({
     },
     title: {
         marginBottom: 10,
-        fontSize: 24
+        fontSize: 24,
+        color: "#000000"
     }
 });
 

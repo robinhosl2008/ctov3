@@ -10,8 +10,8 @@ function LottieTakePicture(props) {
                 loop={false}
                 style={{
                     flex: 1,
-                    width: 60,
-                    height: 60, 
+                    width: 150,
+                    height: 150, 
                     alignSelf: "center"
                 }}
                 source={require('../assets/lottie/take-picture.json')} 

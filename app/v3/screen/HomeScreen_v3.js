@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Text,StyleSheet,View } from 'react-native';
 // import CTOStats from '../../component/CTOStats';
 // import PatrimonioStats from '../../component/PatrimonioStats';
 // import Screen   from '../../component/Screen';
@@ -6,7 +7,6 @@ import React, { useEffect } from 'react';
 // import CTOUser from '../../component/CTOUser';
 import PTRView from 'react-native-pull-to-refresh';
 import ApiService from '../../service/ApiService';
-import { Text,StyleSheet,View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import HeaderProfilePicture from '../components/HeaderProfilePicture';
 // import { Badge } from 'react-native-paper';
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         width:'100%',
         flexDirection:'column',
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
     },
     actionsTitle:{
         display:'flex',

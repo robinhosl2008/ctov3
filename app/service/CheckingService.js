@@ -6,13 +6,13 @@ import { updateChecking }                       from '../state/Checking/Checking
 import OnbusMobileCTOSyncService                from './OnbusMobileCTOSyncService';
 import AsyncUploadFileService                   from './AsyncUploadFileService';
 import { updateCTOStatus } from '../state/CTOStatus/CTOStatusAction';
+
 const onbusMobileCTOCollection                  = firestore().collection('onbus-mobile-cto');
 
 export default {
     async watch_checking_fotografico(){
         await onbusMobileCTOCollection.doc("checking-fotografico").onSnapshot((documentSnapshot) => {
             if (documentSnapshot){ 
-                console.log('1. ta aqui')
                 let user_auth = store.getState().app.user_auth;
                 let total_checking_a_fazer = 0;
                 let arr_checking_fotografico = [];

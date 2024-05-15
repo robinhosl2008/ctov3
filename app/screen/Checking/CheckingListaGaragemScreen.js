@@ -6,7 +6,7 @@ import AVCheckingHeader from '../../component/Checking/AVCheckingHeader';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import { Badge, List } from 'react-native-paper';
 import store from '../../state/store';
-import util from '../../util/util';
+// import util from '../../util/util';
 
 function CheckingListaGaragemScreen(props) {
 
@@ -90,6 +90,7 @@ const style = StyleSheet.create({
     badge_fotos_total:{
         alignSelf: 'center',
         backgroundColor: '#dbdbdb',
+        color: '#000000',
         width: '80%',
         height:40,
         borderRadius:10,

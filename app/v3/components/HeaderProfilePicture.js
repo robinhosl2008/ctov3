@@ -1,9 +1,9 @@
 import React from 'react';
 import { View,Text,TouchableOpacity, StyleSheet, Image} from 'react-native';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+// import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 // import Ionicons from 'react-native-vector-icons/Ionicons';
 import { connect } from 'react-redux';
-import { Avatar }           from 'react-native-paper'; 
+import { Avatar } from 'react-native-paper'; 
 
 
 const HeaderProfilePicture = (props) => {
@@ -15,7 +15,7 @@ const HeaderProfilePicture = (props) => {
     return( 
         <View style={styles.profile}>
             <Avatar.Image size={120}  source={urlSourceImage}/>
-            <Text style={styles.employ}>{props.app.user_auth.nick}</Text>
+            <Text style={styles.employ}>{props.app.user_auth.nick ?? props.app.user_auth.nome}</Text>
             <Text style={styles.ocupation}>{props.app.user_auth.funcao}</Text>
         </View>
     )

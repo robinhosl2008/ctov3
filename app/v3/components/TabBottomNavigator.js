@@ -17,11 +17,11 @@ const Tab = createBottomTabNavigator();
 function displayIcon(routeName,focused,tintColor,size){
     tintColor = focused ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,0.6)';
     switch(routeName){
-        case 'Checking' : return(<FontAwesome5 name={"camera"} solid size={25}/>); break;
-        case 'Terminais' : return(<FontAwesome5 name={"search-location"} solid size={25}/>); break;
-        case 'HomeScreen_v3' : return(<FontAwesome5 name={"home"} solid size={25}/>); break;
-        case 'Garagens' : return(<FontAwesome5 name={"bus"} solid size={25}/>); break;
-        case 'Patrimonios' : return(<FontAwesome5 name={"box"} solid size={25}/>); break;
+        case 'Checking' : return(<FontAwesome5 name={"camera"} solid size={25} color={tintColor}/>); break;
+        case 'Terminais' : return(<FontAwesome5 name={"search-location"} solid size={25} color={tintColor}/>); break;
+        case 'HomeScreen_v3' : return(<FontAwesome5 name={"home"} solid size={25} color={tintColor}/>); break;
+        case 'Garagens' : return(<FontAwesome5 name={"bus"} solid size={25} color={tintColor}/>); break;
+        case 'Patrimonios' : return(<FontAwesome5 name={"box"} solid size={25} color={tintColor}/>); break;
     }
 }
 

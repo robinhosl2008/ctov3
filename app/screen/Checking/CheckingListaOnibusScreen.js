@@ -80,6 +80,7 @@ const style = StyleSheet.create({
     badge_fotos_total:{
         alignSelf: 'center',
         backgroundColor: '#dbdbdb',
+        color: '#000000',
         width: '80%',
         height:40,
         borderRadius:10,

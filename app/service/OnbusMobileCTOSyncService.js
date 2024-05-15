@@ -24,7 +24,7 @@ export default {
         let state       = store.getState(); 
         let user_auth   = state.app.user_auth;
         let docRef      = await onbusMobileCTOSyncCollection.doc(`funcionario-${user_auth.id}`);
-        console.log(docRef);
+        // console.log(docRef);
 
         if (docRef){
 
