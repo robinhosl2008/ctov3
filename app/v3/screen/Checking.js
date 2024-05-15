@@ -51,7 +51,7 @@ const Checking = ({arr_checking_data}) => {
                         })
                     }
                 }
-             }); 
+            }); 
             if(newArrayAVs.length != 0 && value != ''){
                 setAVs(newArrayAVs);
             }else if(value == ''){

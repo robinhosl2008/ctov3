@@ -63,7 +63,12 @@ const Garagens = (props) => {
                     <Text style={styles.title}>Selecione a Garagem</Text>
                 </View>
                 <View style={styles.filtroContainer}>
-                    <TextInput left={<TextInput.Icon name="magnify" size={30} color="gray" />} onChangeText={(value) => filtrar_resultados(value)}  placeholder="Filtrar terminais..." style={styles.filtroInput}/>  
+                    <TextInput 
+                        left={<TextInput.Icon icon="magnify" size={30} color="gray"/>} 
+                        onChangeText={(value) => filtrar_resultados(value)}  
+                        placeholder="Filtrar terminais..." 
+                        style={styles.filtroInput}
+                    />  
                 </View>
             </View>
             </TouchableWithoutFeedback>

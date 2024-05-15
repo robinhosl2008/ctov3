@@ -132,6 +132,8 @@ function OperacaoGaragemOnibus(props) {
         let arr_onibus_em_alerta = util.obj_to_array(item);
         let arrayatuacao = []
 
+        console.info(item);
+                            
         let checkarAlertas = false;
         
         arr_onibus_em_alerta.map(function(alerta){
@@ -162,7 +164,7 @@ function OperacaoGaragemOnibus(props) {
                                         {item.prioridade == '1' ? <><Badge style={[style.badge_prioridade]}>PRIORIDADE</Badge></> : <></> }
                                         <Badge style={[style.badge_status]}>EM ALERTA</Badge>
                                         <Text style={{paddingHorizontal: 5}}>|</Text>
-                                        <Text style={{fontSize: 12, fontWeight: 'bold'}}>{(item.em_alerta_at) ? util.diff_in_days(item.em_alerta_at) + " dia(s)" : "Tempo Indefinido"}</Text>
+                                        <Text style={{fontSize: 12, fontWeight: 'bold', color: 'black'}}>{(item.em_alerta_at) ? util.diff_in_days(item.em_alerta_at) + " dia(s)" : "Tempo Indefinido"}</Text>
                                     </>
                                     ) : (
                                     <>{
@@ -175,13 +177,13 @@ function OperacaoGaragemOnibus(props) {
                                 </View>
                             </View>
                         </View>
-                        <View style={{paddingLeft:10,}}>
-                            <Text style={{fontWeight:'bold'}}>Alertas:</Text>
+                        <View style={{paddingLeft:10, color: 'black'}}>
+                            <Text style={{fontWeight:'bold', color: 'black'}}>Alertas:</Text>
                         {
                             arr_alerta.map((item_alerta) => {
                                 return (
                                     <>
-                                    {(!item_alerta.metadata && item_alerta.id_lib_em_alerta_status == 1)?(<Text key={item_alerta.id_onibus_em_alerta}>{item_alerta.alerta}</Text>):(<></>)}
+                                    {(!item_alerta.metadata && item_alerta.id_lib_em_alerta_status == 1)?(<Text key={item_alerta.id_onibus_em_alerta} style={{color: 'black'}}>{item_alerta.alerta}</Text>):(<></>)}
                                     </>      
                                 )
                             })
@@ -211,7 +213,7 @@ function OperacaoGaragemOnibus(props) {
                 onIconPress={()=>filtrar_por_numero()}
                 /> 
 
-                <Text style={{fontSize:14, marginBottom:3}} >Ordenar Por:</Text>
+                <Text style={{fontSize:14, marginBottom:3, color:'#000000'}} >Ordenar Por:</Text>
                 <View style={style.ordena_onibus}>
                     <RNPickerSelect
                         pickerProps={{style : {width: '100%', height:30,}, inputAndroid: {backgroundColor:'white'} }}
@@ -290,6 +292,7 @@ const style = StyleSheet.create({
         fontSize: 14,
     },
     numero_onibus: {
+        color: 'black',
         fontSize: 37,
         fontWeight: 'bold',
         paddingVertical: 0,
@@ -321,7 +324,7 @@ const style = StyleSheet.create({
         height:45,
         backgroundColor: 'white',
         borderRadius: 10,
-        marginBottom:10,
+        marginBottom: 10,
         padding: 0,
         shadowOpacity: 0,
     },
