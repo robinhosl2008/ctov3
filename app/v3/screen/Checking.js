@@ -2,7 +2,7 @@ import React,{ useState,useEffect } from 'react';
 import { View ,Text,StyleSheet,TouchableWithoutFeedback,TouchableOpacity,FlatList, Keyboard  } from 'react-native'; 
 import { TextInput } from 'react-native-paper';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-// import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 // import Ionicons from 'react-native-vector-icons/Ionicons';
 // import axios from 'axios';
 import { connect } from 'react-redux';
@@ -70,11 +70,16 @@ const Checking = ({arr_checking_data}) => {
                 <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
                     <View>
                         <View  style={styles.checkingContainer}>
-                            <FontAwesome name="camera" size={60} color="gray" />
+                            <FontAwesome5 name="camera" size={60} color="gray" />
                             <Text style={styles.title}>Selecione a AV</Text>
                         </View>
                         <View style={styles.filtroContainer}>
-                            <TextInput left={<TextInput.Icon name="magnify" size={30} color="gray" />}  onChangeText={(value) => filtrar_resultados(value)}  placeholder="Filtrar AVs..." style={styles.filtroInput}/>                
+                            <TextInput 
+                                left={<TextInput.Icon icon="magnify" size={30} color="gray"/>}
+                                onChangeText={(value) => filtrar_resultados(value)}  
+                                placeholder="Filtrar AVs..." 
+                                style={styles.filtroInput}
+                            />                
                         </View>
                     </View>
                 </TouchableWithoutFeedback>
@@ -151,12 +156,14 @@ const styles = StyleSheet.create({
     },
     filtroContainer:{
         backgroundColor:'#dadada',
+        color:'#000000',
         padding:10
     },
     filtroInput:{
         width:'100%',
         height:60,
         backgroundColor:'white',
+        color:'#000000',
         fontSize:16,
         borderRadius:5,
         paddingLeft:20

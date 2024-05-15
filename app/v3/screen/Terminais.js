@@ -1,15 +1,15 @@
 import React,{ useState,useEffect } from 'react';
 import { View,Text,StyleSheet,Button,TouchableOpacity,FlatList,TouchableWithoutFeedback,Keyboard } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
-import { TextInput } from 'react-native-paper';
+// import { ScrollView } from 'react-native-gesture-handler';
+// import { TextInput } from 'react-native-paper';
 import OperacaoOOHService  from '../../service/OperacaoOOHService';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+// import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+// import Ionicons from 'react-native-vector-icons/Ionicons';
 import Infotape from '../components/Infotape';
-import  firestore  from "@react-native-firebase/firestore";
+// import  firestore  from "@react-native-firebase/firestore";
 import Loader from '../components/Loader';
-import store from '../../state/store'; 
+// import store from '../../state/store'; 
 import { connect } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 
@@ -139,13 +139,13 @@ export const Terminais = ({arr_ooh_em_alerta,arr_filtro_atuacao}) => {
     //             keyExtractor={(item,index) => { return index.toString() }}
     //         />
     // }
-
+console.info(pontos)
     return(
         <>      
             <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
             <View>
                 <View style={styles.terminaisContainer}>
-                    <Ionicons name="location-sharp" size={60} color="gray" />
+                    <FontAwesome5 name={"search-location"} solid size={60} color="gray" />
                     <Text style={styles.title}>Selecione o Terminal</Text>
                 </View>
                 {/* <View style={styles.filtroContainer}>
