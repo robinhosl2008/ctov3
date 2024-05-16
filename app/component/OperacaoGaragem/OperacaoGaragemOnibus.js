@@ -270,7 +270,7 @@ const style = StyleSheet.create({
     ordenarPor: {
         fontSize: 14,
         marginBottom: 3,
-        color: 'white'
+        color: 'black',
     },
     container: {
         backgroundColor: 'white',

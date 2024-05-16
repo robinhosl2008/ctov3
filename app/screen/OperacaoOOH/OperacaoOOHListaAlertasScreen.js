@@ -92,9 +92,9 @@ export function OperacaoOOHListaAlertasScreen({app}) {
     }
 
     //Função que define o arr_alertas recuperando do firestore
-    function definir_arr_alertas(){
+    async function definir_arr_alertas(){
         //let resposta = await OperacaoOOHService.listar_ooh_pontos_em_alerta();
-        let resposta = OperacaoOOHService.watch_ooh_pontos_em_alerta();
+        let resposta = await OperacaoOOHService.watch_ooh_pontos_em_alerta();
 
 
 

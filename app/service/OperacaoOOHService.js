@@ -165,7 +165,7 @@ export default {
     },
 
     async watch_ooh_pontos_em_alerta (){
-        await onbusMobileCTOCollection.onSnapshot((snapshot) => {
+        await onbusMobileCTOCollection.onSnapshot((snapshot) => { 
             if (snapshot){
                 let user_auth                           = store.getState().app.user_auth;
                 let arr_filtro_atuacao                  = store.getState().lib.arr_filtro_atuacao;
@@ -180,6 +180,11 @@ export default {
 
                     arr_alertas.push(item_ooh_alerta);
 
+                    console.info("*** *** *** ***");
+                    console.info(arr_filtro_atuacao);
+                    console.info("*** *** *** ***");
+                    
+        
                     //Filtra se o documento está no array de alertas 
                     //que o técnico pode atuar e verifica se ele já foi concluido
                     if(arr_filtro_atuacao.includes(item_ooh_alerta.id_lib_em_alerta)
