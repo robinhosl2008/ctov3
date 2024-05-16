@@ -203,15 +203,18 @@ function OperacaoGaragemOnibus(props) {
             <View style={{ paddingTop: StatusBar.currentHeight, paddingHorizontal: 10 }}>
                 
                 <Searchbar
-                style={style.pesquisa_onibus}
-                placeholder="Filtrar por Número"
-                onChangeText={(str) => setSearchText(str)}
-                keyboardType="number-pad"
-                onSubmitEditing={()=>filtrar_por_numero()}
-                onIconPress={()=>filtrar_por_numero()}
+                    style={style.pesquisa_onibus}
+                    placeholder="Filtrar por Número"
+                    onChangeText={(str) => setSearchText(str)}
+                    keyboardType="number-pad"
+                    onSubmitEditing={()=>filtrar_por_numero()}
+                    onIconPress={()=>filtrar_por_numero()}
+                    inputStyle={{
+                        minHeight: 0
+                    }}
                 /> 
 
-                <Text style={{fontSize:14, marginBottom:3}} >Ordenar Por:</Text>
+                <Text style={style.ordenarPor} >Ordenar Por:</Text>
                 <View style={style.ordena_onibus}>
                     <RNPickerSelect
                         pickerProps={{style : {width: '100%', height:30,}, inputAndroid: {backgroundColor:'white'} }}
@@ -264,6 +267,11 @@ function OperacaoGaragemOnibus(props) {
 }
 
 const style = StyleSheet.create({
+    ordenarPor: {
+        fontSize: 14,
+        marginBottom: 3,
+        color: 'white'
+    },
     container: {
         backgroundColor: 'white',
         borderRadius: 10,
